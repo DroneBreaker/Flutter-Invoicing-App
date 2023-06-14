@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:initiate/screens/home.dart';
+import 'package:initiate/screens/invoice.dart';
 import 'package:initiate/screens/login.dart';
+import 'package:initiate/screens/returns.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const LoginPage(),
-        '/home': (context) => const HomePage()
+        '/home': (context) => const HomePage(),
+        '/invoice': (context) => const InvoicePage(),
+        '/returns': (context) => const ReturnsPage()
       },
       theme: ThemeData(
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

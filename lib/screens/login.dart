@@ -21,11 +21,13 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
   String _username = '';
   String _password = '';
-  TextEditingController _usernameController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
-      print(_username);
+      // print(_username);
       // Form is valid, perform login logic
       // You can replace this with your own login implementation
 
