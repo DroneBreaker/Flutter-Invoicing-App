@@ -140,8 +140,8 @@ class _LoginPageState extends State<LoginPage> {
                         const Text('Don\'t have an account?'),
                         TextButton(
                           onPressed: toggleAuthMode,
-                          child: const Text('Signnnn up.'),
-                        )
+                          child: const Text('Sign up.'),
+                        ),
                       ],
                     ),
                   ],
