@@ -26,6 +26,9 @@ class _HomePageState extends State<HomePage> {
               image: AssetImage('assets/initiate.png'),
               height: 200,
             ),
+            const SizedBox(
+              height: 60,
+            ),
             const Text('The official invoicing app for everyone'),
             const Text('Please follow the instructions'),
             const SizedBox(

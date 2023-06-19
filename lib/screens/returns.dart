@@ -10,10 +10,25 @@ class ReturnsPage extends StatefulWidget {
 class _ReturnsPageState extends State<ReturnsPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Monthly returns'),
-      ),
+    return Scaffold(
+      body: Stack(children: [
+        Positioned(
+          top: 60,
+          left: 10,
+          child: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
+          ),
+        ),
+        const Center(
+          child: Text(
+            'Monthly returns',
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+          ),
+        ),
+      ]),
     );
   }
 }

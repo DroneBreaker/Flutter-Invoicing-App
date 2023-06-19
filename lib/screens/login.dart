@@ -76,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     const SizedBox(height: 100),
                     const Image(
-                        image: AssetImage('assets/initiate.png'), height: 130),
+                        image: AssetImage('assets/initiate.png'), height: 150),
                     const SizedBox(height: 20),
                     const Text(
                       'Welcome to Initiate',
@@ -148,7 +148,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               )),
             )
-          : Container(
+          :
+          // Register page to toggle
+          Container(
               margin: const EdgeInsets.all(30),
               child: Center(
                 child: Column(

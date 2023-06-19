@@ -8,6 +8,9 @@ class InvoicePage extends StatefulWidget {
 }
 
 class _InvoicePageState extends State<InvoicePage> {
+  //handles the items been added
+  addItem() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,8 +69,16 @@ class _InvoicePageState extends State<InvoicePage> {
               Table(
                 children: const [
                   TableRow(children: [
-                    TableCell(child: Text('Text')),
-                    TableCell(child: Text('Amount'))
+                    TableCell(
+                        child: Text(
+                      'Text',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    )),
+                    TableCell(
+                        child: Text('Amount',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)))
                   ])
                 ],
               ),
